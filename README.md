@@ -1,5 +1,5 @@
 Jonathan Concha (85876200)
-1. `in_checkmate`
+1. in_checkmate
 Purpose: Is used to determine if the current player is in checkmate.
 
 Explanation:
@@ -31,7 +31,7 @@ for target_square in self.squares:
 return True
 ```
 
-2. `select_piece`
+2. select_piece
 Purpose: Manages user interactions for selecting and moving pieces.
 
 Explanation:
@@ -80,7 +80,7 @@ if self.in_checkmate():
 - Checks for checkmate after every move and announces the winner if detected.
 
 
-3. `friendly_fire`
+3. friendly_fire
 Purpose: To prevent a piece from capturing another piece of the same color.
 
 Explanation:
@@ -93,7 +93,7 @@ if self.piece_color == "black" and piece_2_color in self.black_pieces:
 - If the target square contains a friendly piece, returns `True` to block the move from happening.
 
 
-4. `allowed_piece_move`
+4. allowed_piece_move
 Purpose: Checks if a move being attempted by a player is valid based on the selected piece's movement rules and game state.
 
 Explanation:
@@ -125,7 +125,7 @@ return False
 
 
 
-5. `castle`
+5. castle
 Purpose: Handles the castling mechanics and validation.
 
 Explanation:
@@ -146,7 +146,7 @@ self.squares["d1"].config(image="pyimage7")
 - Updates the rook’s position on the board when the castling is mechanic performed.
 
 
-6. `in_check`
+6. in_check
 Purpose: Determines if the king is under attack and has to move.
 
 Explanation:
@@ -168,11 +168,13 @@ return False
 ```
 - Restores the previous state of the board and returns `False` if there are no checks found.
 
-What to Improve: I think that I have to improve my ability to see which task I have to perform first, such as should I make sure this part of the code works before moving on
+
+
+- What to Improve: I think that I have to improve my ability to see which task I have to perform first, such as should I make sure this part of the code works before moving on
 because this causes a lot of problems with time management, I think thats something that I definitely want to improve on.
 
-What did I learn: I learned that python is a much easier language to understand than stuff like Java, I also learned that the frontend of a project and stuff like game fundamentals
+- What did I learn: I learned that python is a much easier language to understand than stuff like Java, I also learned that the frontend of a project and stuff like game fundamentals
 are some of the most important part of coding because it sents the base of the game and how you will code the rest of your project.
 
-What did I find difficult: The hardest part of the project was at the start when we were setting up the basics of chess like piece movement and attacking other pieces,
+- What did I find difficult: The hardest part of the project was at the start when we were setting up the basics of chess like piece movement and attacking other pieces,
 we had a bug that didnt let you capture any of the opponents pieces so we had to recode a lot of the project and functions inside the code.
